@@ -34,6 +34,10 @@
   </PropertyGroup>
   <ItemGroup>
     <TypeScriptCompile Include="app.ts" />
+    <TypeScriptCompile Include="business_logic\pontoBusinessLogic.ts" />
+    <TypeScriptCompile Include="controllers\pontoController.ts" />
+    <TypeScriptCompile Include="domain\models\usuario.ts" />
+    <TypeScriptCompile Include="repository\appContext.ts" />
     <TypeScriptCompile Include="routes\index.ts" />
     <TypeScriptCompile Include="routes\user.ts" />
     <TypeScriptCompile Include="Scripts\typings\express\express.d.ts" />
