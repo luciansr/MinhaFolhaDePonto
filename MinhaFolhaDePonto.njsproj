@@ -37,17 +37,32 @@
     <TypeScriptCompile Include="business_logic\pontoBusinessLogic.ts" />
     <TypeScriptCompile Include="controllers\pontoController.ts" />
     <TypeScriptCompile Include="domain\models\usuario.ts" />
+    <TypeScriptCompile Include="public\App\Components\Home\HomeController.ts" />
+    <TypeScriptCompile Include="public\App\MinhaFolhaDePonto.module.ts" />
     <TypeScriptCompile Include="repository\appContext.ts" />
-    <TypeScriptCompile Include="routes\index.ts" />
-    <TypeScriptCompile Include="routes\user.ts" />
+    <TypeScriptCompile Include="Scripts\typings\angularjs\angular-animate.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\angularjs\angular-cookies.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\angularjs\angular-resource.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\angularjs\angular-route.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\angularjs\angular-sanitize.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\angularjs\angular.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\express\express.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\jquery\jquery.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\moment\moment.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\node\node.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\stylus\stylus.d.ts" />
     <Content Include="package.json" />
+    <Content Include="public\App\Components\Home\Home.html" />
+    <Content Include="public\assets\libs\material-design-lite\bower.json" />
+    <Content Include="public\assets\libs\material-design-lite\material.css" />
+    <Content Include="public\assets\libs\material-design-lite\material.min.css" />
+    <Content Include="public\assets\libs\material-design-lite\material.min.css.map" />
+    <Content Include="public\assets\libs\material-design-lite\material.min.js.map" />
+    <Content Include="public\assets\libs\material-design-lite\package.json" />
+    <Content Include="public\index.html" />
     <Content Include="public\stylesheets\style.styl" />
     <Content Include="README.md" />
-    <Content Include="views\index.jade" />
-    <Content Include="views\layout.jade" />
+    <TypeScriptCompile Include="Scripts\typings\toastr\toastr.d.ts" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="business_logic\" />
@@ -55,17 +70,41 @@
     <Folder Include="domain\" />
     <Folder Include="domain\models\" />
     <Folder Include="public\" />
+    <Folder Include="public\App\" />
+    <Folder Include="public\App\Components\" />
+    <Folder Include="public\App\Components\Home\" />
+    <Folder Include="public\App\Directives\" />
+    <Folder Include="public\App\Services\" />
+    <Folder Include="public\assets\" />
+    <Folder Include="public\assets\css\" />
+    <Folder Include="public\assets\img\" />
+    <Folder Include="public\assets\js\" />
+    <Folder Include="public\assets\libs\" />
+    <Folder Include="public\assets\libs\angular\" />
+    <Folder Include="public\assets\libs\angular\angularjs\" />
+    <Folder Include="public\assets\libs\material-design-lite\" />
     <Folder Include="public\images\" />
     <Folder Include="public\javascripts\" />
     <Folder Include="public\stylesheets\" />
     <Folder Include="repository\" />
-    <Folder Include="routes\" />
     <Folder Include="Scripts\" />
     <Folder Include="Scripts\typings\" />
     <Folder Include="Scripts\typings\express\" />
+    <Folder Include="Scripts\typings\angularjs\" />
+    <Folder Include="Scripts\typings\moment\" />
+    <Folder Include="Scripts\typings\jquery\" />
+    <Folder Include="Scripts\typings\toastr\" />
     <Folder Include="Scripts\typings\node\" />
     <Folder Include="Scripts\typings\stylus\" />
     <Folder Include="views\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="public\App\Components\Home\HomeController.js" />
+    <Compile Include="public\App\MinhaFolhaDePonto.module.js" />
+    <Compile Include="public\assets\libs\angular\angularjs\angular-route.min.js" />
+    <Compile Include="public\assets\libs\angular\angularjs\angular.min.js" />
+    <Compile Include="public\assets\libs\material-design-lite\material.js" />
+    <Compile Include="public\assets\libs\material-design-lite\material.min.js" />
   </ItemGroup>
   <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />

@@ -5,9 +5,10 @@
   "main": "app.js",
   "author": {
     "name": "Lucian",
-    "email": ""
+    "email": "luciansr@gmail.com"
   },
   "dependencies": {
+    "consolidate": "0.13.1",
     "express": "3.4.4",
     "jade": "*",
     "stylus": "*"
