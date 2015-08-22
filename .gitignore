@@ -1,0 +1,17 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+*.suo
+/business_logic/pontoBusinessLogic.js
+/business_logic/pontoBusinessLogic.js.map
+/controllers/pontoController.js
+/controllers/pontoController.js.map
+/domain/models/usuario.js.map
+/domain/models/usuario.js
+/node_modules
+/obj/Debug
+/public/app/components/account/accountController.js.map
+*.map
+/public/app/folhaDePonto.module.js
+/bin/Microsoft.NodejsTools.WebRole.dll
