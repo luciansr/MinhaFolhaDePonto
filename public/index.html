@@ -1,15 +1,16 @@
 ﻿<!DOCTYPE html>
-<html>
+<html ng-app="folhaDePonto">
 <head>
     <meta charset="utf-8" />
-    <link href="assets/libs/material-design-lite/material.css" rel="stylesheet" />
+    <link href="libs/material-design-lite/material.css" rel="stylesheet" />
+    <link href="css/folhaDePonto.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <title></title>
+    <title>Minha folha de ponto</title>
 </head>
-<body>
+<body ng-controller="accountController as acountCtrl">
     <!-- The drawer is always open in large screens. The header is always shown,
     even in small screens. -->
-    <div class="mdl-layout mdl-js-layout 
+    <div class="mdl-layout mdl-js-layout
             mdl-layout--fixed-header mdl-layout--fixed-drawer">
         <header class="mdl-layout__header">
             <div class="mdl-layout__header-row">
@@ -28,18 +29,29 @@
             </div>
         </header>
         <div class="mdl-layout__drawer">
-            <span class="mdl-layout-title">Title</span>
+            <span class="mdl-layout-title">Folha de Ponto</span>
             <nav class="mdl-navigation">
-                <a class="mdl-navigation__link" href="">Link</a>
-                <a class="mdl-navigation__link" href="">Link</a>
-                <a class="mdl-navigation__link" href="">Link</a>
-                <a class="mdl-navigation__link" href="">Link</a>
+                <a class="mdl-navigation__link" href="#/">Início</a>
+                <a class="mdl-navigation__link" href="#/ponto" ng-if="accountCtrl.isLogeed()">Folha de ponto</a>
             </nav>
         </div>
         <main class="mdl-layout__content">
-            <div class="page-content"><!-- Your content goes here --></div>
+            <div class="page-content">
+                <ng-view></ng-view>
+            </div>
         </main>
     </div>
-    <script src="assets/libs/material-design-lite/material.min.js"></script>
+    <script src="libs/material-design-lite/material.min.js"></script>
+    <script src="libs/angular/angularjs/angular.min.js"></script>
+    <script src="libs/angular/angularjs/angular-route.min.js"></script>
+
+    <!--app module-->
+    <script src="app/folhaDePonto.module.js"></script>
+
+    <!--app services-->
+    <!--app directives-->
+    <!--app controllers-->
+    <script src="app/components/home/homeController.js"></script>
+    <script src="app/components/account/accountController.js"></script>
 </body>
 </html>

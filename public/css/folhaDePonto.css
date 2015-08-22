@@ -1,0 +1,20 @@
+﻿
+    .padding-center {
+        padding:50px;
+        padding-left:50%;
+        padding-right:50%;
+    }
+
+    .login-card-wide.mdl-card {
+        width: 512px;
+        position:relative;
+        left:-256px;
+    }
+
+    .login-card-wide > .mdl-card__title {
+        height: 100px;
+    }
+
+    .login-card-wide > .mdl-card__menu {
+        color: #fff;
+    }

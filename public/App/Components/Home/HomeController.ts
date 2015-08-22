@@ -2,8 +2,8 @@
     'use strict';
 
     angular
-        .module('app')
-        .controller('controller', controller);
+        .module('folhaDePonto')
+        .controller('homeController', controller);
 
     controller.$inject = ['$location'];
 

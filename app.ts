@@ -1,12 +1,6 @@
 ﻿import express = require('express');
-import routes = require('./routes/index');
-import user = require('./routes/user');
 import http = require('http');
 import path = require('path');
-
-
-//app.set('views', __dirname + '/views');
-//app.set('view engine', 'html');
 
 var app = express();
 
@@ -21,6 +15,7 @@ app.use(express.methodOverride());
 app.use(app.router);
 
 app.use(express.static(path.join(__dirname, 'public')));
+app.use('/public', express.static(__dirname + '/public'));
 
 // development only
 if ('development' == app.get('env')) {
